@@ -21,7 +21,7 @@ button {
   font-size: 14px;
   color: var(--link-color);
 }
-.list-no {
+.list-no1 {
   list-style: none;
 }
 .zagolovok {
@@ -177,4 +177,10 @@ button {
 }
 a {
   text-decoration: none;
+}
+.first-rule {
+  color: red;
+}
+.last-rule {
+  color: green;
 }
