@@ -134,6 +134,8 @@ button {
   line-height: 1.71px;
   letter-spacing: 0.03emf;
 }
+.address-street:hover {
+}
 .footer address .footer-link {
   line-height: 1.71px;
   letter-spacing: 0.03em;
@@ -144,6 +146,9 @@ button {
 }
 .footer address .footer-link:focus {
   color: var(--link-color-hov);
+}
+.black-span {
+  color: #000;
 }
 
 /* PORTFOLIO */
