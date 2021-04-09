@@ -21,7 +21,7 @@ button {
   font-size: 14px;
   color: var(--link-color);
 }
-.list-no1 {
+.list-no {
   list-style: none;
 }
 .zagolovok {
@@ -39,6 +39,9 @@ button {
 .logo-span {
   color: var(--link-color-hov);
 }
+.logo .white-span {
+  color: white;
+}
 .nav-link {
   font-weight: 500;
   line-height: 1.14;
@@ -51,6 +54,10 @@ button {
   color: var(--link-color-hov);
 }
 .con-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: var(--contact-color);
 }
 .con-link:hover {
@@ -107,12 +114,15 @@ button {
   letter-spacing: 0.03em;
 }
 /* our team */
+.card-people {
+  background-color: white;
+}
 .title-name {
   font-family: var(--font);
   color: var(--title-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.18px;
+  line-height: 1.18;
 
   letter-spacing: 0.03em;
 }
@@ -127,17 +137,19 @@ button {
 .footer {
   background: #2f303a;
 }
+.address {
+  font-style: normal;
+}
 .address-street {
   color: #fff;
   font-family: inherit;
   font-size: 14px;
-  line-height: 1.71px;
+  line-height: 1.71;
   letter-spacing: 0.03emf;
 }
-.address-street:hover {
-}
+
 .footer address .footer-link {
-  line-height: 1.71px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -154,7 +166,7 @@ button {
 /* PORTFOLIO */
 
 .catalog-but {
-  width: 128px;
+  font-family: var(--font);
   background: #f5f4fa;
   border-radius: 4px;
   font-weight: 500;
@@ -168,6 +180,14 @@ button {
   color: #fff;
   background: var(--link-color-hov);
 }
+.name-project {
+  font-family: var(--font);
+  color: var(--link-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
 .type-catalog {
   font-family: inherit;
   color: var(--p-color);
@@ -177,10 +197,4 @@ button {
 }
 a {
   text-decoration: none;
-}
-.first-rule {
-  color: red;
-}
-.last-rule {
-  color: green;
 }
