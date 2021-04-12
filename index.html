@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
+      integrity="sha512-Zx6MlUMKSVJoQ+83OwhdILe8cSEsCzfqThJd7J/VA2UrK6Ctj85p+xzqfyuNXE5B1k25uUdmJ2OzItbBy9GHAQ=="
+      crossorigin="anonymous"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -15,29 +21,33 @@
     <title>WebStudio</title>
   </head>
   <body>
-    <header>
+    <header class="container">
       <!-- Navigations -->
       <nav>
         <a href="./" class="link logo">
           <span class="logo-span">Web</span>Studio</a
         >
         <ul class="menu list-no">
-          <li><a class="link nav-link" href="#">Студия</a></li>
-          <li>
+          <li class="nav-item">
+            <a class="link nav-link" href="#">Студия</a>
+          </li>
+          <li class="nav-item">
             <a class="link nav-link" href="./portfolio/portfolio.html"
               >Портфолио</a
             >
           </li>
-          <li><a class="link nav-link" href="#">Контакты</a></li>
+          <li class="nav-item">
+            <a class="link nav-link" href="#">Контакты</a>
+          </li>
         </ul>
       </nav>
-      <ul class="list-no">
-        <li>
+      <ul class="con-list list-no">
+        <li class="con-item">
           <a class="link con-link" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </li>
-        <li>
+        <li class="con-item">
           <a class="link con-link" href="tel:+380961111111"
             >+38 096 111 11 11</a
           >
@@ -46,34 +56,40 @@
     </header>
     <main>
       <section class="shapka">
-        <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="order-but" type="button">Заказать услугу</button>
+        <div class="container">
+          <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
+          <div class="center">
+            <button class="order-but" type="button">Заказать услугу</button>
+          </div>
+          
       </section>
-      <section>
+        </div>
+        
+      <section class="container">
         <!-- Наши качества -->
         <ul class="about-list list-no">
-          <li>
+          <li class="about-list-item">
             <h3 class="mini-title">Внимание к деталям</h3>
             <p class="zagolovok about-p">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
-          <li>
+          <li class="about-list-item">
             <h3 class="mini-title">Пунктуальность</h3>
             <p class="zagolovok about-p">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-          <li>
+          <li class="about-list-item">
             <h3 class="mini-title">Планирование</h3>
             <p class="zagolovok about-p">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
-          <li>
+          <li class="about-list-item">
             <h3 class="mini-title">Современные технологии</h3>
             <p class="zagolovok about-p">
               Значимость этих проблем настолько очевидна, что реализация
@@ -82,10 +98,10 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="container">
         <!-- Фото чем мы занимаемся  -->
         <h2 class="title-section">Чем мы занимаемся</h2>
-        <ul class="list-no">
+        <ul class="list-no list-img">
           <li>
             <img
               src="img/img-3.jpg"
@@ -112,10 +128,10 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="container team">
         <!-- Наша команда -->
         <h2 class="title-section">Наша команда</h2>
-        <ul class="list-no">
+        <ul class="list-no list-team">
           <li class="card-people">
             <img src="img/team/img.jpg" alt="Ігарь" width="270" height="260" />
             <h4 class="title-name">Игорь Демьяненко</h4>
@@ -145,32 +161,35 @@
       </section>
     </main>
     <footer class="footer">
-      <!-- Адрес и контакты в футере -->
-      <a href="./" class="link logo">
-        <span class="logo-span">Web</span><span class="white-span">Studio</span>
-      </a>
-      <address class="address">
-        <a
-          href="https://goo.gl/maps/hZhFV1fXpXnWWx7i7"
-          class="address-street link"
-          target="_blank"
-          >г. Киев, пр-т Леси Украинки, 26</a
-        >
-        <ul class="list-no">
-          <li>
-            <a
-              class="link con-link footer-link"
-              href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="link con-link footer-link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+      <div class="container">
+         <!-- Адрес и контакты в футере -->
+        <a href="./" class="link logo footer-logo">
+          <span class="logo-span ">Web</span><span class="white-span">Studio</span>
+        </a>
+        <address class="address">
+          <a
+            href="https://goo.gl/maps/hZhFV1fXpXnWWx7i7"
+            class="address-street link"
+            target="_blank"
+            >г. Киев, пр-т Леси Украинки, 26</a
+          >
+          <ul class="list-no">
+            <li>
+              <a
+                class="link con-link footer-link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="link con-link footer-link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
       </address>
+      </div>  
+     
     </footer>
   </body>
 </html>
